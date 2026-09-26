@@ -15,6 +15,8 @@ function render(code) {
     .join('');
   $('subtotal').textContent = formatINR(sub);
   $('shipping').textContent = shipping(sub) === 0 ? 'Free' : formatINR(shipping(sub));
+  $('discount-row').hidden = !valid;
+  $('discount').textContent = valid ? `−${formatINR(sub * COUPONS[code])}` : '';
   $('coupon-status').textContent = code ? (valid ? `${code} applied` : `${code} is not a valid coupon`) : '';
   $('total').textContent = formatINR(total(items, valid ? code : undefined));
 }
