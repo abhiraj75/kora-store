@@ -20,7 +20,7 @@ export function shipping(amount) {
 export function applyCoupon(amount, code) {
   const rate = COUPONS[code];
   if (!rate) return amount;
-  return amount * (1 - rate);
+  return amount * rate;
 }
 
 export function total(items, code) {
