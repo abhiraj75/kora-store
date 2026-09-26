@@ -1,0 +1,11 @@
+{
+  "name": "kora-store",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Demo storefront for RedHanded. Contains a deliberately planted pricing bug.",
+  "scripts": {
+    "test": "node --test",
+    "dev": "python3 -m http.server 3000"
+  }
+}

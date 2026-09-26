@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kora Store · Checkout</title>
+  <style>
+    :root { --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color:var(--ink); background:#f9fafb; }
+    main { max-width: 440px; margin: 40px auto; background:#fff; border:1px solid var(--line); border-radius:14px; padding:24px; }
+    h1 { font-size: 20px; margin: 0 0 16px; }
+    ul { list-style:none; padding:0; margin:0 0 16px; }
+    li, .row { display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--line); }
+    .coupon { display:flex; gap:8px; margin:16px 0 4px; }
+    input { flex:1; padding:10px; border:1px solid var(--line); border-radius:8px; font-size:15px; text-transform:uppercase; }
+    button { padding:10px 16px; border:0; border-radius:8px; background:var(--ink); color:#fff; font-size:15px; cursor:pointer; }
+    #coupon-status { color:var(--muted); font-size:13px; min-height:18px; margin-bottom:8px; }
+    .total { font-size:20px; font-weight:700; border-bottom:0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Your cart</h1>
+    <ul id="items"></ul>
+    <div class="row"><span>Subtotal</span><span id="subtotal"></span></div>
+    <div class="row"><span>Shipping</span><span id="shipping"></span></div>
+    <div class="coupon">
+      <input id="coupon" placeholder="Coupon code" aria-label="Coupon code" />
+      <button id="apply">Apply</button>
+    </div>
+    <div id="coupon-status"></div>
+    <div class="row total"><span>Total</span><span id="total" data-testid="total"></span></div>
+  </main>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
