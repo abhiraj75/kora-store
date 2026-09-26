@@ -1,0 +1,54 @@
+
+> kora-store@1.0.0 test
+> node --test
+
+TAP version 13
+# Subtest: SAVE10 deducts 10% from the reported ₹2,000 cart
+ok 1 - SAVE10 deducts 10% from the reported ₹2,000 cart
+  ---
+  duration_ms: 0.427226
+  ...
+# Subtest: subtotal sums price times quantity
+ok 2 - subtotal sums price times quantity
+  ---
+  duration_ms: 0.431702
+  ...
+# Subtest: shipping is free at or above ₹1,500
+ok 3 - shipping is free at or above ₹1,500
+  ---
+  duration_ms: 0.125883
+  ...
+# Subtest: shipping is ₹99 below ₹1,500
+ok 4 - shipping is ₹99 below ₹1,500
+  ---
+  duration_ms: 0.058719
+  ...
+# Subtest: total without a coupon is subtotal plus shipping
+ok 5 - total without a coupon is subtotal plus shipping
+  ---
+  duration_ms: 0.076377
+  ...
+# Subtest: an unknown coupon changes nothing
+ok 6 - an unknown coupon changes nothing
+  ---
+  duration_ms: 0.053672
+  ...
+# Subtest: round2 rounds to paise
+ok 7 - round2 rounds to paise
+  ---
+  duration_ms: 0.724902
+  ...
+# Subtest: formatINR uses the rupee symbol and Indian grouping
+ok 8 - formatINR uses the rupee symbol and Indian grouping
+  ---
+  duration_ms: 56.516128
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 100.83236

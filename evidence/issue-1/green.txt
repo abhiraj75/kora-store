@@ -1,0 +1,15 @@
+TAP version 13
+# Subtest: SAVE10 deducts 10% from the reported ₹2,000 cart
+ok 1 - SAVE10 deducts 10% from the reported ₹2,000 cart
+  ---
+  duration_ms: 0.41635
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 1
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 32.656848
