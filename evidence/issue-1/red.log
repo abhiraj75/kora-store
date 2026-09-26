@@ -1,0 +1,26 @@
+TAP version 13
+# Subtest: SAVE10 deducts 10% from the reported ₹2,000 cart
+not ok 1 - SAVE10 deducts 10% from the reported ₹2,000 cart
+  ---
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+
+    200 !== 1800
+
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 1800
+  actual: 200
+  operator: 'strictEqual'
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+
+exit_status=1
